@@ -1,115 +1,215 @@
-🎯 Talent IQ – Full-Stack Interview Platform
-<p align="center"> <img src="https://img.shields.io/badge/MERN-Stack-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/TypeScript-optional-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" /> </p><p align="center"> A complete interview practice platform with **real-time video calls**, **collaborative code editor**, and **AI‑powered feedback**. </p>
-✨ Highlights
+
+
+🚀 Talent IQ – Full-Stack Interview Platform
+<p align="center"> <img src="https://img.shields.io/badge/MERN-Stack-3FA037?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" /> <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/Express.js-API-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> </p> <p align="center"> <b>A powerful real-time interview practice platform with live video calls, collaborative coding, and AI-powered feedback.</b> </p>
+🌟 Overview
+
+Talent IQ is a production-ready MERN Stack interview simulator designed to replicate real-world technical interviews.
+
+It enables:
+
+🎥 Live 1-on-1 interviews
+
+🧑‍💻 Real-time collaborative coding
+
+⚡ Instant code execution
+
+📊 Performance tracking dashboard
+
+🔐 Secure authentication
+
+🎯 Built to simulate FAANG-style coding interviews with scalable architecture.
+
+🧠 Why Talent IQ?
+
+✔ Real-time collaboration
+✔ Interview-grade coding environment
+✔ Multi-language execution engine
+✔ Production-ready authentication
+✔ Scalable backend architecture
+
+✨ Key Features
 Feature	Description
-🧑‍💻 Code Editor	VS Code‑like Monaco editor with multi‑language support (JS/Python/Java)
-🔐 Authentication	Secure login via Clerk (email, Google, GitHub)
-🎥 Video Interviews	1‑on‑1 video rooms with screen sharing, mic/camera toggle, recording
-💬 Live Chat	Real‑time messaging during sessions
-🧠 Practice Problems	Curated list of coding challenges with test cases
-🎯 Auto Feedback	Success/failure based on output; confetti on pass 🎉
-🔒 Room Locking	Only two participants per session
-⚙️ Code Execution	Isolated execution via Piston API
-🧰 Dashboard	Track sessions, problems solved, stats
-🚀 Background Jobs	Async tasks handled by Inngest
-🛠️ Tech Stack
-<div align="center">
-Frontend	Backend	Database	Services
-<img src="https://img.icons8.com/color/48/000000/react-native.png" width="40"/> React 19	<img src="https://img.icons8.com/color/48/000000/nodejs.png" width="40"/> Node.js	<img src="https://img.icons8.com/color/48/000000/mongodb.png" width="40"/> MongoDB	<img src="https://cdn.jsdelivr.net/gh/alohe/emojipedia/custom-emoji/clerk.svg" width="40"/> Clerk
-<img src="https://img.icons8.com/color/48/000000/typescript.png" width="40"/> TypeScript (optional)	<img src="https://img.icons8.com/color/48/000000/express.png" width="40"/> Express		<img src="https://getstream.io/favicon.ico" width="40"/> Stream
-<img src="https://vitejs.dev/logo.svg" width="40"/> Vite			<img src="https://www.inngest.com/favicon.ico" width="40"/> Inngest
-<img src="https://tailwindcss.com/favicons/favicon-32x32.png" width="40"/> Tailwind CSS			<img src="https://emkc.org/favicon.ico" width="40"/> Piston API
-</div>
+🧑‍💻 Collaborative Code Editor	VS Code-like Monaco editor with JS / Python / Java
+🎥 1-on-1 Video Rooms	Screen sharing, mic/camera toggle & recording
+💬 Live Chat	Real-time messaging during sessions
+🔐 Authentication	Clerk (Email, Google, GitHub login)
+🧠 Practice Problems	Structured DSA challenges with test cases
+⚙️ Code Execution	Secure execution via Piston API
+🎯 Auto Feedback	Pass/Fail detection + Confetti celebration 🎉
+🔒 Room Locking	Only 2 participants allowed per room
+📊 Dashboard	Track stats, solved problems & session history
+🚀 Background Jobs	Async workflows powered by Inngest
+🧰 Tech Stack
+💻 Frontend
+<p> <img src="https://skillicons.dev/icons?i=react,vite,tailwind,typescript" /> </p>
+
+React 19
+
+Vite
+
+Tailwind CSS
+
+Clerk Authentication
+
+Stream Video SDK
+
+🖥 Backend
+<p> <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb" /> </p>
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Inngest
+
+⚙️ Third-Party Services
+
+⚡ Piston API – Code execution engine
+
+🔐 Clerk – Authentication & session management
+
+🎥 Stream – Video SDK
+
+📂 Project Structure
+talent-iq/
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   └── server.js
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   └── main.jsx
+│
+└── README.md
 
 🚀 Getting Started
-Prerequisites
-Node.js v18+ & npm
+📌 Prerequisites
 
-MongoDB (local or Atlas)
+Node.js v18+
+
+MongoDB (Local / Atlas)
 
 Git
 
 🔧 Installation
-Clone the repository:
+git clone https://github.com/yourusername/talent-iq.git
+cd talent-iq
 
-
-
-bash
 npm install --prefix backend
 npm install --prefix frontend
-Or use the root script:
 
-bash
-npm run build
 🔑 Environment Variables
-Create .env files in both backend/ and frontend/ folders.
-
 Backend (backend/.env)
-env
 PORT=3000
 NODE_ENV=development
-
 DB_URL=mongodb://localhost:27017/talent-iq
 
-INNGEST_EVENT_KEY=your_inngest_event_key
-INNGEST_SIGNING_KEY=your_inngest_signing_key
+INNGEST_EVENT_KEY=your_key
+INNGEST_SIGNING_KEY=your_key
 
-STREAM_API_KEY=your_stream_api_key
-STREAM_API_SECRET=your_stream_api_secret
+STREAM_API_KEY=your_key
+STREAM_API_SECRET=your_secret
 
-CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+CLERK_PUBLISHABLE_KEY=your_key
+CLERK_SECRET_KEY=your_secret
 
 CLIENT_URL=http://localhost:5173
+
 Frontend (frontend/.env)
-env
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+VITE_CLERK_PUBLISHABLE_KEY=your_key
 VITE_API_URL=http://localhost:3000/api
-VITE_STREAM_API_KEY=your_stream_api_key
-Note: Replace placeholder values with your actual keys from Clerk, Stream, MongoDB Atlas (if used), and Inngest (optional).
+VITE_STREAM_API_KEY=your_key
 
-🏃‍♂️ Run the App (Development)
-Terminal 1 – Backend
-
-bash
+🏃 Run the Application
+Backend
 cd backend
 npm run dev
-Terminal 2 – Frontend
 
-bash
+Frontend
 cd frontend
 npm run dev
-Or run both together from the root (requires concurrently):
 
-bash
+
+Or run both:
+
 npm run dev
-Frontend: http://localhost:5173
 
-Backend API: http://localhost:3000
+🌐 Application URLs
+Service	URL
+Frontend	http://localhost:5173
 
-Health check: http://localhost:3000/health
+Backend	http://localhost:3000
 
-📸 Screenshots
-Coming soon – add your own screenshots of the dashboard, code editor, and video call.
-
-🧪 Running Tests
-(No tests implemented yet – feel free to contribute!)
-
+Health Check	http://localhost:3000/health
 🌍 Deployment
-Backend (Sevalla / Render / Railway)
-Set environment variables on the hosting platform.
+Backend (Render / Railway / Sevalla)
 
-Build command: npm install
+Add environment variables
 
-Start command: npm start
+Build: npm install
+
+Start: npm start
 
 Frontend (Vercel / Netlify)
-Set environment variables (VITE_*).
 
-Build command: npm run build
+Add VITE_* variables
 
-Publish dist folder.
+Build: npm run build
+
+Deploy dist/
+
+📊 Architecture Overview
+User → React Frontend → Express API → MongoDB
+                     ↓
+                 Piston API (Execution)
+                     ↓
+                 Stream (Video)
+                     ↓
+                 Clerk (Auth)
+
+🧪 Testing
+
+Currently no automated tests implemented.
+Contributions are welcome!
 
 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page.
+
+Fork the repository
+
+Create a new branch
+
+Commit your changes
+
+Push and open a Pull Request
+
+📌 Future Improvements
+
+🤖 AI-powered interview analysis
+
+🧠 Plagiarism detection
+
+🎥 Interview playback system
+
+🏆 Global leaderboard
+
+📈 Admin analytics dashboard
+
+📜 License
+
+MIT License
+
+👨‍💻 Author
+Rishabh Sahu
+
+Full-Stack Developer | MERN Stack Engineer | AI Enthusiast
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub and support the development!
