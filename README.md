@@ -1,5 +1,3 @@
-
-
 🚀 Talent IQ – Full-Stack Interview Platform
 <p align="center"> <img src="https://img.shields.io/badge/MERN-Stack-3FA037?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" /> <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/Express.js-API-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> </p> <p align="center"> <b>A powerful real-time interview practice platform with live video calls, collaborative coding, and AI-powered feedback.</b> </p>
 🌟 Overview
@@ -9,22 +7,32 @@ Talent IQ is a production-ready MERN Stack interview simulator designed to repli
 It enables:
 
 🎥 Live 1-on-1 interviews
+
 🧑‍💻 Real-time collaborative coding
+
 ⚡ Instant code execution
+
 📊 Performance tracking dashboard
+
 🔐 Secure authentication
+
 🎯 Built to simulate FAANG-style coding interviews with scalable architecture.
+
 🧠 Why Talent IQ?
 
 ✔ Real-time collaboration
+
 ✔ Interview-grade coding environment
+
 ✔ Multi-language execution engine
+
 ✔ Production-ready authentication
+
 ✔ Scalable backend architecture
 
 ✨ Key Features
 Feature	Description
-🧑‍💻 Collaborative Code Editor	VS Code-like Monaco editor with JS / Python / Java
+🧑‍💻 Collaborative Code Editor	VS Code-like Monaco editor with JS / Python / Java support
 🎥 1-on-1 Video Rooms	Screen sharing, mic/camera toggle & recording
 💬 Live Chat	Real-time messaging during sessions
 🔐 Authentication	Clerk (Email, Google, GitHub login)
@@ -74,13 +82,17 @@ talent-iq/
 │   ├── controllers/
 │   ├── routes/
 │   ├── models/
+│   ├── middleware/
 │   └── server.js
 │
 ├── frontend/
 │   ├── components/
 │   ├── pages/
+│   ├── hooks/
+│   ├── utils/
 │   └── main.jsx
 │
+├── package.json
 └── README.md
 
 🚀 Getting Started
@@ -142,31 +154,19 @@ Frontend	http://localhost:5173
 Backend	http://localhost:3000
 
 Health Check	http://localhost:3000/health
-🌍 Deployment
-Backend (Render / Railway / Sevalla)
-
-Add environment variables
-
-Build: npm install
-
-Start: npm start
-
-Frontend (Vercel / Netlify)
-
-Add VITE_* variables
-
-Build: npm run build
-
-Deploy dist/
-
 📊 Architecture Overview
-User → React Frontend → Express API → MongoDB
-                     ↓
-                 Piston API (Execution)
-                     ↓
-                 Stream (Video)
-                     ↓
-                 Clerk (Auth)
+User
+  ↓
+React Frontend
+  ↓
+Express API
+  ↓
+MongoDB Database
+
+External Services:
+  → Piston API (Code Execution)
+  → Stream (Video SDK)
+  → Clerk (Authentication)
 
 🧪 Testing
 
@@ -187,7 +187,7 @@ Push and open a Pull Request
 
 🤖 AI-powered interview analysis
 
-🧠 Plagiarism detection
+🧠 Code plagiarism detection
 
 🎥 Interview playback system
 
@@ -200,10 +200,6 @@ Push and open a Pull Request
 MIT License
 
 👨‍💻 Author
+
 Rishabh Sahu
-
 Full-Stack Developer | MERN Stack Engineer | AI Enthusiast
-
-⭐ If you like this project
-
-Give it a ⭐ on GitHub and support the development!
