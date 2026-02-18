@@ -9,17 +9,11 @@ Talent IQ is a production-ready MERN Stack interview simulator designed to repli
 It enables:
 
 🎥 Live 1-on-1 interviews
-
 🧑‍💻 Real-time collaborative coding
-
 ⚡ Instant code execution
-
 📊 Performance tracking dashboard
-
 🔐 Secure authentication
-
 🎯 Built to simulate FAANG-style coding interviews with scalable architecture.
-
 🧠 Why Talent IQ?
 
 ✔ Real-time collaboration
