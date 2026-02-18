@@ -84,23 +84,6 @@ Built to simulate FAANG-style coding interviews with scalable architecture.
 
 ---
 
-## 📂 Project Structure
-
-talent-iq/
-│
-├── backend/
-│ ├── controllers/
-│ ├── routes/
-│ ├── models/
-│ └── server.js
-│
-├── frontend/
-│ ├── components/
-│ ├── pages/
-│ └── main.jsx
-│
-└── README.md
-
 
 ---
 
